@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+html {
+  
+}
+body {
+  color: #000;
+  font-family: 'proxima_novaregular';
+}
+body,html{
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+button{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}

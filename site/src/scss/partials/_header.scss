@@ -1,0 +1,44 @@
+nav{
+  padding: $margin-x;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  .logo{
+    width: 150px;
+  }
+  #menu-btn{
+    margin-top: auto;
+    margin-bottom: auto;
+    text-decoration: none;
+    color: $white;
+    font-family: 'proxima_novabold';
+    display: flex;
+    svg{
+      max-height: 3em;
+      min-width: 20px;
+      padding-left: 10px;
+    }
+  }
+}
+
+.header {
+  display: flex;
+  display: flex;
+  padding: $margin-x;
+  height: 100vh;
+  background-color: #6638b6;
+  background-image: url(/assets/img/hero.jpg);
+  background-size: 433%;
+  background-position: 0% 21%;
+  background-repeat: no-repeat;
+
+  #content{
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  h1{
+    font-family: 'proxima_novabold';
+    color: $white;
+  }
+}
