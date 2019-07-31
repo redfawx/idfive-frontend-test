@@ -478,7 +478,11 @@ nav {
   font-size: 1.8em;
   line-height: 1.7em;
   padding: 3em 2em;
-  text-align: center; }
+  text-align: center;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1050px; }
 
 .action-block {
   background-color: #6638B6;
