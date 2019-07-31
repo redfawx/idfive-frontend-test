@@ -1,4 +1,5 @@
 nav{
+  z-index: 3;
   @include horizontal-padding;
   position: absolute;
   display: flex;
@@ -24,6 +25,15 @@ nav{
 }
 
 .header {
+  #fade{
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 0;
+  }
   display: flex;
   display: flex;
   @include horizontal-padding;
@@ -35,6 +45,7 @@ nav{
   background-repeat: no-repeat;
 
   #content{
+    z-index: 1;
     margin-top: auto;
     margin-bottom: auto;
   }

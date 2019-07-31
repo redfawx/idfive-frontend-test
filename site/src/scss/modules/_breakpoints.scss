@@ -19,6 +19,7 @@
         h1{
             max-width: 1000px;
             font-size: 5em !important;
+            margin-bottom: .5em;
         }
     }
     .stats-container{
@@ -66,6 +67,9 @@
         display: flex;
         justify-content: space-evenly;
         text-align: left;
+        .social-icon{
+            margin-bottom: 10px;
+        }
     }
 }
 @media only screen and (min-width:1140px) {
