@@ -390,7 +390,6 @@ textarea {
   /* 2 */ }
 
 nav {
-  margin-top: 1.5em;
   z-index: 3;
   padding: 0em 2em;
   position: absolute;
@@ -398,27 +397,33 @@ nav {
   display: flex;
   width: 100%;
   -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between;
+  padding-top: 0em;
+  min-height: 196px; }
   @media only screen and (min-width: 1024px) {
     nav {
       padding: 2em 5em; } }
   nav .logo {
     width: 150px; }
   nav #menu-btn {
+    position: relative;
+    right: 2em;
     font-size: 1.3em;
-    margin-top: auto;
+    margin-top: 60px;
     margin-bottom: auto;
     text-decoration: none;
     color: #fff;
     font-family: 'proxima_novabold';
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    max-height: 1em; }
     nav #menu-btn svg {
-      max-height: 3em;
+      max-height: 1em;
       min-width: 27px;
       padding-left: 10px; }
 
 #menu {
+  display: none;
   position: absolute;
   z-index: 1000;
   width: 100%;
@@ -429,6 +434,7 @@ nav {
     display: -ms-flexbox;
     display: flex;
     min-width: 15px;
+    width: 90px;
     color: #fff;
     position: absolute;
     right: 2em;
@@ -437,6 +443,9 @@ nav {
     font-size: 1.3em;
     cursor: pointer; }
     #menu #menu-close-btn svg {
+      position: absolute;
+      top: 0;
+      left: 25px;
       min-width: 15px;
       margin-left: 20px; }
   #menu #content {
@@ -494,21 +503,22 @@ nav {
         color: #fff; }
 
 .header {
-  display: -ms-flexbox;
-  display: flex;
-  display: flex;
+  min-height: 700px;
   padding: 0em 2em;
+  display: table;
   height: 100vh;
   background-color: #6638b6;
   background-image: url(/assets/img/hero.jpg);
   background-size: 433%;
   background-position: 0% 21%;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  position: relative; }
   .header #fade {
     background-color: rgba(0, 0, 0, 0.4);
     position: absolute;
     width: 100vw;
     height: 100vh;
+    min-height: 700px;
     left: 0;
     top: 0;
     z-index: 0; }
@@ -516,9 +526,12 @@ nav {
     .header {
       padding: 2em 5em; } }
   .header #content {
-    z-index: 1;
-    margin-top: auto;
-    margin-bottom: auto; }
+    z-index: 10;
+    margin-bottom: auto;
+    width: 100vw;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative; }
   .header h1 {
     font-family: 'proxima_novabold';
     color: #fff;
@@ -562,12 +575,11 @@ nav {
 
 .anchor-btn {
   position: absolute;
+  bottom: 0;
+  left: calc(50% - 50px);
+  width: 50px;
   max-width: 50px;
   color: #fff;
-  bottom: 2em;
-  left: 50%;
-  -ms-transform: translateX(-50%);
-      transform: translateX(-50%);
   cursor: pointer; }
 
 .callout-block h2 {

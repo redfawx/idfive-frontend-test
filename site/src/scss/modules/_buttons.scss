@@ -11,10 +11,10 @@
 
 .anchor-btn{
     position: absolute;
+    bottom: 0;
+    left: calc(50% - 50px);
+    width: 50px;
     max-width: 50px;
     color: $white;
-    bottom: 2em;
-    left: 50%;
-    transform: translateX(-50%);
     cursor: pointer;
 }
