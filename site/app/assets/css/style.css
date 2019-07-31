@@ -431,13 +431,33 @@ nav {
     font-family: 'proxima_novabold';
     color: #fff; }
 
+.footer {
+  background-color: #6638B6;
+  text-align: center;
+  padding-top: 7em;
+  padding-bottom: 7em;
+  padding-left: 2em;
+  padding-right: 2em;
+  color: #fff;
+  font-size: 1.2em; }
+  .footer .logo {
+    width: 150px; }
+  .footer .footer-section {
+    margin-top: 2em;
+    margin-bottom: 2em; }
+  .footer a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-family: proxima_novabold; }
+
 .cta-btn {
   color: white;
   font-size: 1.5em;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  border: solid 6px white;
+  border: solid 4px white;
   background-color: transparent;
   padding: 15px 20px;
   min-width: 230px; }
@@ -472,7 +492,8 @@ nav {
   text-align: center; }
 
 .stat-block {
-  position: relative; }
+  position: relative;
+  margin-top: 6em; }
   .stat-block .stat-icon {
     background-color: #6638B6;
     width: 100px;
