@@ -486,9 +486,14 @@ nav {
 
 .action-block {
   background-color: #6638B6;
-  padding: 10em 2em;
+  padding: 0em 2em;
+  padding-top: 10em !important;
+  padding-bottom: 10em !important;
   text-align: center;
   margin-top: 5em; }
+  @media only screen and (min-width: 1024px) {
+    .action-block {
+      padding: 2em 5em; } }
   .action-block p {
     color: #fff;
     font-size: 1.2em;
@@ -599,7 +604,16 @@ nav {
     -ms-flex-pack: center;
         justify-content: center; }
     .stats-container .stat-block {
-      margin: 1em; } }
+      margin: 2em; }
+  .action-block {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    .action-block p {
+      margin-bottom: 0;
+      text-align: left;
+      max-width: 900px; } }
 
 @media print {
   * {

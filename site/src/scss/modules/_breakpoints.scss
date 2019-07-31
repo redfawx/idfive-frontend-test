@@ -21,7 +21,17 @@
         display: flex;
         justify-content: center;
         .stat-block{
-            margin: 1em;
+            margin: 2em;
+        }
+    }
+
+    .action-block{
+        display: flex;
+        justify-content: space-between;
+        p{
+            margin-bottom: 0;
+            text-align: left;
+            max-width: 900px;
         }
     }
 }
