@@ -590,7 +590,9 @@ nav {
 
 @media only screen and (min-width: 768px) {
   .header {
-    background-position: center; } }
+    background-position: center; }
+  .img-tile {
+    min-height: 500px; } }
 
 @media only screen and (min-width: 1024px) {
   .header {
@@ -634,7 +636,13 @@ nav {
         max-width: 650px; }
     .tile-block :nth-child(2) {
       -ms-flex-order: -1;
-          order: -1; } }
+          order: -1; }
+  .footer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
+    text-align: left; } }
 
 @media print {
   * {

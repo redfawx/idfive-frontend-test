@@ -8,6 +8,10 @@
     .header{
         background-position: center;
     }
+
+    .img-tile{
+        min-height: 500px;
+    }
 }
 @media only screen and (min-width:1024px) {
     .header{
@@ -56,6 +60,12 @@
             order: -1;
         }
         
+    }
+
+    .footer{
+        display: flex;
+        justify-content: space-evenly;
+        text-align: left;
     }
 }
 @media only screen and (min-width:1140px) {
