@@ -1,6 +1,14 @@
 
 'use strict';
 
+function toggleStyle(el, styleName, value) {
+  if (el.style[styleName] !== value) { 
+    el.style[styleName] = value;
+  } else {
+    el.style[styleName] = '';
+  }
+}
+
 var canToggle = true;
   function toggleMenu() {
 
@@ -9,14 +17,14 @@ var canToggle = true;
 
 
       if (canToggle) {
-        menuContainer.style.display = 'block';
-        menuContainer.style.opacity = '1';
-        menuPanel.style.right = '0px';
+        toggleStyle(menuContainer, 'display', 'block');
+        toggleStyle(menuContainer, 'opacity', '1');
+        toggleStyle(menuPanel, 'right', '0px');
         canToggle = false;
       } else {
-        menuContainer.style.display = 'none';
-        menuContainer.style.opacity = '0';
-        menuPanel.style.right = '-100%';
+        toggleStyle(menuContainer, 'display', 'none');
+        toggleStyle(menuContainer, 'opacity', '0');
+        toggleStyle(menuPanel, 'right', '-100%');
         canToggle = true;
       }
   }
