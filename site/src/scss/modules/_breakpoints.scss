@@ -17,6 +17,13 @@
             font-size: 5em !important;
         }
     }
+    .stats-container{
+        display: flex;
+        justify-content: center;
+        .stat-block{
+            margin: 1em;
+        }
+    }
 }
 @media only screen and (min-width:1140px) {
 

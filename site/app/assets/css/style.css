@@ -507,6 +507,9 @@ nav {
   padding: 1em 2em;
   text-align: center; }
 
+.stats-container {
+  display: block; }
+
 .stat-block {
   position: relative;
   margin-top: 6em; }
@@ -589,7 +592,14 @@ nav {
     background-size: cover !important; }
     .header h1 {
       max-width: 1000px;
-      font-size: 5em !important; } }
+      font-size: 5em !important; }
+  .stats-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .stats-container .stat-block {
+      margin: 1em; } }
 
 @media print {
   * {
