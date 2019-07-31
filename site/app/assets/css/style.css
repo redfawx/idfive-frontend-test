@@ -434,7 +434,8 @@ nav {
     right: 2em;
     top: 3em;
     font-family: proxima_novabold;
-    font-size: 1.3em; }
+    font-size: 1.3em;
+    cursor: pointer; }
     #menu #menu-close-btn svg {
       min-width: 15px;
       margin-left: 20px; }
@@ -688,7 +689,9 @@ nav {
   .header {
     background-position: center; }
   .img-tile {
-    min-height: 500px; } }
+    min-height: 500px; }
+  #menu #content {
+    width: 400px; } }
 
 @media only screen and (min-width: 1024px) {
   .header {
