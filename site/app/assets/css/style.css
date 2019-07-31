@@ -425,7 +425,7 @@ nav {
 #menu {
   opacity: 0;
   transition: visibility 0s, opacity 0.5s linear;
-  position: absolute;
+  position: fixed;
   z-index: 1000;
   width: 100%;
   height: 100%;
