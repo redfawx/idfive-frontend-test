@@ -17,8 +17,7 @@ body {
   font-family: 'proxima_novaregular'; }
 
 body, html {
-  min-height: 100vh;
-  overflow: hidden; }
+  min-height: 100vh; }
 
 button {
   -webkit-appearance: none;
@@ -401,6 +400,7 @@ nav {
   nav .logo {
     width: 150px; }
   nav #menu-btn {
+    font-size: 1.3em;
     margin-top: auto;
     margin-bottom: auto;
     text-decoration: none;
@@ -410,7 +410,7 @@ nav {
     display: flex; }
     nav #menu-btn svg {
       max-height: 3em;
-      min-width: 20px;
+      min-width: 27px;
       padding-left: 10px; }
 
 .header {
@@ -440,7 +440,36 @@ nav {
   border: solid 6px white;
   background-color: transparent;
   padding: 15px 20px;
-  min-width: 210px; }
+  min-width: 230px; }
+
+.callout-block h2 {
+  font-family: proxima_novalight;
+  font-size: 1.8em;
+  line-height: 1.7em;
+  padding: 3em 2em;
+  text-align: center; }
+
+.action-block {
+  background-color: #6638B6;
+  padding: 10em 2em;
+  text-align: center; }
+  .action-block p {
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 3.5em; }
+
+.img-tile {
+  width: 100%;
+  min-height: 300px;
+  background-position: center;
+  background-size: cover; }
+
+.copy-tile h2 {
+  font-family: proxima_novalight;
+  font-size: 1.8em;
+  line-height: 1.7em;
+  padding: 1em 2em;
+  text-align: center; }
 
 @font-face {
   font-family: 'proxima_novablack';
