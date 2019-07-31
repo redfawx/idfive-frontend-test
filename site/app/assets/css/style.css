@@ -450,6 +450,10 @@ nav {
     text-decoration: none;
     color: #fff;
     font-family: proxima_novabold; }
+  .footer .social-icon {
+    width: 25px;
+    margin-left: 4px;
+    margin-right: 4px; }
 
 .cta-btn {
   color: white;
@@ -472,7 +476,8 @@ nav {
 .action-block {
   background-color: #6638B6;
   padding: 10em 2em;
-  text-align: center; }
+  text-align: center;
+  margin-top: 5em; }
   .action-block p {
     color: #fff;
     font-size: 1.2em;
