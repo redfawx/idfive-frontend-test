@@ -390,6 +390,7 @@ textarea {
   /* 2 */ }
 
 nav {
+  margin-top: 1.5em;
   z-index: 3;
   padding: 0em 2em;
   position: absolute;
@@ -473,15 +474,26 @@ nav {
     margin-right: 4px; }
 
 .cta-btn {
-  color: white;
+  color: #fff;
   font-size: 1.5em;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  border: solid 4px white;
+  border: solid 4px #fff;
   background-color: transparent;
   padding: 15px 20px;
-  min-width: 230px; }
+  min-width: 230px;
+  cursor: pointer; }
+
+.anchor-btn {
+  position: absolute;
+  max-width: 50px;
+  color: #fff;
+  bottom: 2em;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+  cursor: pointer; }
 
 .callout-block h2 {
   font-family: proxima_novalight;

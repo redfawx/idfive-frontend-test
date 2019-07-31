@@ -1,9 +1,20 @@
 .cta-btn{
-    color: white;
+    color: $white;
     font-size: 1.5em;
     appearance: none;
-    border: solid 4px white;
+    border: solid 4px $white;
     background-color: transparent;
     padding: 15px 20px;
     min-width: 230px;
+    cursor: pointer;
+}
+
+.anchor-btn{
+    position: absolute;
+    max-width: 50px;
+    color: $white;
+    bottom: 2em;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
 }
