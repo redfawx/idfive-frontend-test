@@ -390,13 +390,16 @@ textarea {
   /* 2 */ }
 
 nav {
-  padding: 2em;
+  padding: 0em 2em;
   position: absolute;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   -ms-flex-pack: justify;
       justify-content: space-between; }
+  @media only screen and (min-width: 1024px) {
+    nav {
+      padding: 2em 5em; } }
   nav .logo {
     width: 150px; }
   nav #menu-btn {
@@ -417,19 +420,23 @@ nav {
   display: -ms-flexbox;
   display: flex;
   display: flex;
-  padding: 2em;
+  padding: 0em 2em;
   height: 100vh;
   background-color: #6638b6;
   background-image: url(/assets/img/hero.jpg);
   background-size: 433%;
   background-position: 0% 21%;
   background-repeat: no-repeat; }
+  @media only screen and (min-width: 1024px) {
+    .header {
+      padding: 2em 5em; } }
   .header #content {
     margin-top: auto;
     margin-bottom: auto; }
   .header h1 {
     font-family: 'proxima_novabold';
-    color: #fff; }
+    color: #fff;
+    margin-bottom: 1em; }
 
 .footer {
   background-color: #6638B6;
@@ -572,6 +579,13 @@ nav {
 @media only screen and (min-width: 768px) {
   .header {
     background-position: center; } }
+
+@media only screen and (min-width: 1024px) {
+  .header {
+    background-size: cover !important; }
+    .header h1 {
+      max-width: 1000px;
+      font-size: 5em !important; } }
 
 @media print {
   * {

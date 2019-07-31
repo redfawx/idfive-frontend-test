@@ -1,5 +1,5 @@
 nav{
-  padding: $margin-x;
+  @include horizontal-padding;
   position: absolute;
   display: flex;
   width: 100%;
@@ -26,7 +26,7 @@ nav{
 .header {
   display: flex;
   display: flex;
-  padding: $margin-x;
+  @include horizontal-padding;
   height: 100vh;
   background-color: #6638b6;
   background-image: url(/assets/img/hero.jpg);
@@ -41,5 +41,6 @@ nav{
   h1{
     font-family: 'proxima_novabold';
     color: $white;
+    margin-bottom: 1em;
   }
 }
