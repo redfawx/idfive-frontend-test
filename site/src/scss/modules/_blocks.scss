@@ -35,7 +35,11 @@
 }
 
 .copy-tile{
+    
     h2{
+        display: table-cell;
+        vertical-align: middle;
+        position: relative;
         font-family: proxima_novalight;
         font-size: 1.8em;
         line-height: 1.7em;

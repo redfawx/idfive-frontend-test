@@ -550,7 +550,9 @@ nav {
     width: 150px; }
   .footer .footer-section {
     margin-top: 2em;
-    margin-bottom: 2em; }
+    margin-bottom: 2em;
+    min-width: 200px;
+    max-height: 70px; }
   .footer a {
     display: block;
     text-decoration: none;
@@ -575,7 +577,7 @@ nav {
 
 .anchor-btn {
   position: absolute;
-  bottom: 0;
+  bottom: 50px;
   left: calc(50% - 50px);
   width: 50px;
   max-width: 50px;
@@ -615,6 +617,9 @@ nav {
   background-size: cover; }
 
 .copy-tile h2 {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
   font-family: proxima_novalight;
   font-size: 1.8em;
   line-height: 1.7em;
@@ -752,11 +757,13 @@ nav {
   .footer {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: space-evenly;
-        justify-content: space-evenly;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     text-align: left; }
     .footer .social-icon {
-      margin-bottom: 10px; } }
+      margin-bottom: 10px; }
+  .copy-tile {
+    display: table !important; } }
 
 @media print {
   * {

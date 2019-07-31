@@ -7,12 +7,16 @@
     padding-right: $margin-x;
     color: $white;
     font-size: 1.2em;
+    
+
     .logo{
         width: 150px;
     }
     .footer-section{
        margin-top: $margin-y;
        margin-bottom: $margin-y;
+       min-width: 200px;
+       max-height: 70px;
     }
     a{
         display: block;

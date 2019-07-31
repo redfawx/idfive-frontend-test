@@ -71,11 +71,15 @@
 
     .footer{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         text-align: left;
         .social-icon{
             margin-bottom: 10px;
         }
+    }
+
+    .copy-tile{
+        display: table !important;
     }
 }
 @media only screen and (min-width:1140px) {
