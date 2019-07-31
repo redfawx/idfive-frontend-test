@@ -521,7 +521,7 @@ nav {
   .header #fade {
     background-color: rgba(0, 0, 0, 0.4);
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     min-height: 700px;
     left: 0;
