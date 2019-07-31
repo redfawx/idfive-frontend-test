@@ -613,7 +613,28 @@ nav {
     .action-block p {
       margin-bottom: 0;
       text-align: left;
-      max-width: 900px; } }
+      max-width: 900px; }
+  .tile-block {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .tile-block .img-tile, .tile-block .copy-tile {
+      width: 50%;
+      min-height: 400px;
+      height: 50vh;
+      display: -ms-flexbox;
+      display: flex; }
+      .tile-block .img-tile h2, .tile-block .copy-tile h2 {
+        text-align: left;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 650px; }
+    .tile-block :nth-child(2) {
+      -ms-flex-order: -1;
+          order: -1; } }
 
 @media print {
   * {

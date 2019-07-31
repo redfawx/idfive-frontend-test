@@ -34,6 +34,29 @@
             max-width: 900px;
         }
     }
+
+    .tile-block{
+        display: flex;
+        flex-wrap: wrap;
+        .img-tile, .copy-tile{
+            width: 50%;
+            min-height: 400px;
+            height: 50vh;
+            display: flex;
+            h2{
+                text-align: left;
+                margin-top: auto;
+                margin-bottom: auto;
+                margin-right: auto;
+                margin-left: auto;
+                max-width: 650px;
+            }
+        }
+        :nth-child(2){
+            order: -1;
+        }
+        
+    }
 }
 @media only screen and (min-width:1140px) {
 
