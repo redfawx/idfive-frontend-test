@@ -9,6 +9,9 @@
     "type": "git",
     "url": ""
   },
+  "scripts": {
+    "gulp": "gulp"
+  },
   "devDependencies": {
     "browser-sync": "^2.11.1",
     "gulp": "^3.9.0",
