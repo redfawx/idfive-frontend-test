@@ -30,7 +30,9 @@ var canToggle = true;
   }
 
 var menuBtn = document.getElementById('menu-btn');
+var menuFade = document.getElementById('menu-fade');
 var menuCloseBtn = document.getElementById('menu-close-btn');
 
 menuBtn.addEventListener('click', toggleMenu);
+menuFade.addEventListener('click', toggleMenu);
 menuCloseBtn.addEventListener('click', toggleMenu);
